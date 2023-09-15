@@ -1,5 +1,6 @@
-<script>
-  import {counter} from "./store.js";
+<script lang="ts">
+  import { counter } from "./store.js";
+  export let name: string;
 </script>
 
 <button
@@ -7,5 +8,5 @@
   class="btn btn-success btn-lg m-2"
   on:click={$counter.increment}
 >
-  Svelte - Count is {$counter.count}
+  {name} - Count is {$counter.count}
 </button>
